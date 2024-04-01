@@ -87,9 +87,8 @@ DEPLOYMENTDESCRIPTION = null
           def jenkinsUtils = load "groovy/JenkinsUtils.groovy"
           jenkinsUtils.checkDeploymentStatus()
         }
-      
+      }
     }
-
     stage("Tag Successful Import into Test") {
       steps {
         script {
@@ -118,6 +117,7 @@ DEPLOYMENTDESCRIPTION = null
         }
       }
     }
+    
   }
 }
 
